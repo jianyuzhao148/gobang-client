@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LoadSceneSkin"
+	 width="1450"
+	height="910" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect width="1450" height="910" x="0" y="0" fillAlpha="0.6"/>
+	<e:Button label="Button" x="591" y="383"/>
+</e:Skin>

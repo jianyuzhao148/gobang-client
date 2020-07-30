@@ -13,6 +13,6 @@
     },
     "include": [
         "src",
-        "libs"
+        "libs", "socket.io"
     ]
 }

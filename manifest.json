@@ -5,13 +5,24 @@
 		"libs/modules/eui/eui.js",
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/tween/tween.js",
-		"libs/modules/promise/promise.js"
+		"libs/modules/promise/promise.js",
+		"libs/socket.io/socket.io.js",
+		"libs/jszip/jszip.js"
 	],
 	"game": [
-		"bin-debug/AssetAdapter.js",
-		"bin-debug/LoadingUI.js",
+		"bin-debug/game/scane/Scene.js",
+		"bin-debug/game/scane/CreatePanel.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
-		"bin-debug/ThemeAdapter.js"
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/game/net/ResponseHandle.js",
+		"bin-debug/game/net/Socket.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/game/scane/HallScene.js",
+		"bin-debug/game/scane/LoadPanel.js",
+		"bin-debug/game/scane/RoomListScroller.js",
+		"bin-debug/game/scane/RoomScene.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/game/scane/SceneManager.js"
 	]
 }

@@ -20,6 +20,14 @@
     },
     {
       "name": "promise"
+    },
+    {
+      "name":"socket.io",
+      "path":"libs/socket.io"
+    },
+    {
+      "name":"jszip",
+      "path":"libs/jszip"
     }
   ],
   "eui": {

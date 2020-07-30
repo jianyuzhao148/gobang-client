@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="createRoomSkin"
+	 width="400"
+	height="300" xmlns:e="http://ns.egret.com/eui">
+	<e:Label text="CreatePanel" x="132" y="129" anchorOffsetX="0" width="173" anchorOffsetY="0" height="38" visible="true"/>
+</e:Skin>

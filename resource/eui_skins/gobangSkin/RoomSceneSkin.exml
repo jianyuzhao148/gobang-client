@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoomSceneSkin"
+	 width="1450"
+	height="910" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="200" height="200" x="127" y="131">
+		<e:Label text="Label" x="79" y="79"/>
+	</e:Group>
+	<e:Group width="200" height="200" x="127" y="578">
+		<e:Label text="Label" x="67" y="45"/>
+	</e:Group>
+	<e:Group width="200" height="200" x="567" y="303">
+		<e:Label text="Label" x="103" y="93"/>
+	</e:Group>
+</e:Skin>
