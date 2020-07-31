@@ -28,6 +28,10 @@
     {
       "name":"jszip",
       "path":"libs/jszip"
+    },
+    {
+      "name":"mouse",
+      "path":"libs/mouse"
     }
   ],
   "eui": {

@@ -2,33 +2,64 @@
 <e:Skin class="game.exmlSkin"
 	 width="1450"
 	height="910" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
-	<e:Group width="480" height="478" y="15" x="15" anchorOffsetX="-2.131" anchorOffsetY="0" visible="true" locked="true">
+	<w:Config id="173a393260e"/>
+	<e:Group width="480" height="478" y="15" x="20" anchorOffsetX="-2.131" anchorOffsetY="0" visible="true">
+		<e:Image source="user_info_png" x="0" y="0" scale9Grid="25,25,26,26" anchorOffsetX="0" width="480" anchorOffsetY="0" height="478"/>
 		<e:Image source="icon_head_png" x="19" y="19" anchorOffsetX="0" width="222.641" anchorOffsetY="0" height="234.923"/>
 	</e:Group>
-	<e:Group width="480" x="15" y="500" anchorOffsetX="0" anchorOffsetY="0" visible="true" height="390" locked="true">
-		<e:Rect width="480" x="0" y="20" scaleX="1" scaleY="1" fillColor="0x87CEEB" visible="true" height="350"/>
+	<e:Group width="480" x="20" y="500" anchorOffsetX="0" anchorOffsetY="0" visible="true" height="390">
+		<e:Rect width="480" x="0" y="20" scaleX="1" scaleY="1" visible="true" height="350" fillColor="0x3FB7E8"/>
 		<e:Image source="table_box_down_png" x="0" y="343" scaleX="1" scaleY="1" scale9Grid="47,18,417,26" width="480" locked="true"/>
         <e:Image source="table_box_middle_png" x="0" y="47" scaleX="1" scaleY="1" width="480" height="296" locked="true"/>
 		<e:Image source="table_box_up_png" x="0" y="0" scaleX="1" scaleY="1" width="480" locked="true"/>
 		<e:Scroller width="480" height="370" x="0" y="0" scaleX="1" scaleY="1">
 			</e:Scroller>
 	</e:Group>
-	<e:Group width="920" height="65" x="515" y="690" anchorOffsetX="0" anchorOffsetY="0" visible="true" locked="true">
-		<e:Image source="search_png" x="837.851" y="6.371" anchorOffsetX="1.172" anchorOffsetY="0.48" width="76.096" height="56.801" visible="true"/>
-		<e:Image source="icon_line_png" x="0" y="0" scale9Grid="65,18,64,19" width="830" height="65"/>
+	<e:Group width="920" height="65" x="507" y="690" anchorOffsetX="0" anchorOffsetY="0" visible="true">
+		<e:Group width="65" height="65" y="0" anchorOffsetX="0" x="855">
+			<e:Button id="searchButton" label="Button" x="0" y="0" skinName="SearchButtonSkin"/>
+		</e:Group>
+		<e:Group width="846.065" height="65" x="0" y="0" anchorOffsetX="0">
+			<e:Image source="icon_line_png" x="1" y="0" scale9Grid="65,18,64,28" anchorOffsetX="0" width="844.571" height="65"/>
+			<e:TextInput width="782.062" height="35" x="40" y="20" anchorOffsetX="0" alpha="0"/>
+		</e:Group>
 	</e:Group>
-	<e:Group width="920" height="670" x="515" y="15" anchorOffsetX="0" anchorOffsetY="0">
-		<e:Rect width="920" height="620" x="0" y="20" scaleX="1" scaleY="1" fillColor="0x2EB0DB"/>
+	<e:Group width="920" height="670" x="507" y="15" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Rect width="920" height="630" x="0" y="20" scaleX="1" scaleY="1" fillColor="0x2EB0DB"/>
+		<e:Image source="table_box_middle_png" x="0" y="40" scaleX="1" scaleY="1" width="920" height="570"/>
+		<ns1:RoomListScroller id="roomListScroller" width="820" height="605.074" x="50" y="30" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="auto" scrollPolicyV="auto">
+			
+					
+							
+									
+											
+												
+											
+											
+										
+									
+								
+							
+						
+					
+				
+			<e:Group/>
+		</ns1:RoomListScroller>
 		<e:Image source="table_box_up_png" x="0" y="0" scaleX="1" scaleY="1" width="920"/>
-		<e:Image source="table_box_middle_png" x="0" y="40" scaleX="1" scaleY="1" width="920" height="550"/>
-		<e:Image source="table_box_down2_png" x="0" y="577" scaleX="1" scaleY="1" width="920"/>
+		<e:Image source="table_box_down2_png" x="0" y="606.503" scaleX="1" scaleY="1" width="920" visible="true" anchorOffsetY="0" height="63.497"/>
 	</e:Group>
-	<e:Group width="449" height="130" x="515" y="762.113" anchorOffsetX="0" anchorOffsetY="0" locked="true">
-		<e:Button id="createRoom" label="创建房间" x="112.114" y="25.049" anchorOffsetX="0" width="195.109" anchorOffsetY="0" height="80.571"/>
-		<e:Image source="create_room_png" x="0" y="0" scaleX="1" scaleY="1"/>
-	</e:Group>
-	<e:Group width="455" height="130" x="978.921" y="760.699" locked="true">
-		<e:Button id="fastGame" label="快速开始" x="159.405" y="26.483" anchorOffsetX="0" width="176.628" anchorOffsetY="0" height="77.865"/>
-		<e:Image source="fast_game_png" x="0" y="0" scaleX="1" scaleY="1"/>
+	<e:Group width="920" height="130" x="507" y="760">
+		<e:Group width="449" height="130" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
+			
+				
+			
+			<e:Button id="createRoom" label="Button" x="122.174" y="19.244" skinName="CreateButtonSkin"/>
+		</e:Group>
+		<e:Group width="455" height="130" x="463.84900000000005" y="0.6989999999998417" scaleX="1" scaleY="1">
+			
+				
+			
+			<e:Button id="fastGame" label="快速开始" x="111.937" y="16.594" anchorOffsetX="0" width="202.34" anchorOffsetY="0" height="93.688" skinName="FastGameButtonSkin"/>
+		</e:Group>
 	</e:Group>
 </e:Skin>

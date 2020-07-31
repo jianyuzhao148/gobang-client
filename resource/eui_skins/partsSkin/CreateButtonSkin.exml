@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CreateButtonSkin"
+	states="up,down,disabled" width="200"
+	height="90" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="create_room_down_png" includeIn="down" x="0" y="0" width="200" height="90"/>
+	<e:Image source="create_room_png" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" height="90" includeIn="up,disabled" width="200" width.up="200" x.up="0" y.up="0" height.up="90"/>
+</e:Skin>

@@ -1,6 +1,4 @@
 class Main extends eui.UILayer {
-
-
     protected createChildren(): void {
         super.createChildren();
 
@@ -29,8 +27,9 @@ class Main extends eui.UILayer {
     }
 
     private async runGame() {
+        mouse.enable(this.stage);
         new ResponseHandle().handle();
-        SecneManager.instance.rootLayer=this;
+        SecneManager.instance.rootLayer = this;
         await this.loadResource()
         this.createGameScene();
         const result = await RES.getResAsync("description_json")

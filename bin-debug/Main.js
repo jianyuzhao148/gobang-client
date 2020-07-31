@@ -74,6 +74,7 @@ var Main = (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        mouse.enable(this.stage);
                         new ResponseHandle().handle();
                         SecneManager.instance.rootLayer = this;
                         return [4 /*yield*/, this.loadResource()];

@@ -6,8 +6,6 @@ declare module skins{
 	class CheckBoxSkin extends eui.Skin{
 	}
 }
-declare class createRoomSkin extends eui.Skin{
-}
 declare class LoadSceneSkin extends eui.Skin{
 }
 declare module game{
@@ -32,7 +30,15 @@ declare module skins{
 	class PanelSkin extends eui.Skin{
 	}
 }
+declare class CreateButtonSkin extends eui.Skin{
+}
+declare class FastGameButtonSkin extends eui.Skin{
+}
+declare class RoomListItemSkin extends eui.Skin{
+}
 declare class roomListSkin extends eui.Skin{
+}
+declare class SearchButtonSkin extends eui.Skin{
 }
 declare module skins{
 	class ProgressBarSkin extends eui.Skin{

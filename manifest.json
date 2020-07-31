@@ -7,22 +7,23 @@
 		"libs/modules/tween/tween.js",
 		"libs/modules/promise/promise.js",
 		"libs/socket.io/socket.io.js",
-		"libs/jszip/jszip.js"
+		"libs/jszip/jszip.js",
+		"libs/mouse/mouse.js"
 	],
 	"game": [
-		"bin-debug/game/scane/Scene.js",
-		"bin-debug/game/scane/CreatePanel.js",
+		"bin-debug/game/view/secne/Scene.js",
+		"bin-debug/AssetAdapter.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/game/net/ResponseHandle.js",
 		"bin-debug/game/net/Socket.js",
 		"bin-debug/LoadingUI.js",
-		"bin-debug/game/scane/HallScene.js",
-		"bin-debug/game/scane/LoadPanel.js",
-		"bin-debug/game/scane/RoomListScroller.js",
-		"bin-debug/game/scane/RoomScene.js",
-		"bin-debug/AssetAdapter.js",
-		"bin-debug/game/scane/SceneManager.js"
+		"bin-debug/game/view/parts/RoomListItem.js",
+		"bin-debug/game/view/parts/RoomListScroller.js",
+		"bin-debug/game/view/secne/HallScene.js",
+		"bin-debug/game/view/secne/LoadPanel.js",
+		"bin-debug/game/view/secne/RoomScene.js",
+		"bin-debug/game/view/SceneManager.js"
 	]
 }

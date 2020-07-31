@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoomListItemSkin"
+	 width="820"
+	height="120" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="item_bg_png" x="0" y="0" scale9Grid="26,26,25,25" width="820" height="120"/>
+	<e:Group id="playerGroup1" width="80" height="80" x="200" y="20">
+		<e:Image id="playerImage1" width="80" height="80" x="0" y="0" source="{data.image}" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="playerGroup2" width="80" height="80" x="540" y="20">
+		<e:Image id="playerImage2" width="80" height="80" x="0" y="0" source="{data.image2}" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

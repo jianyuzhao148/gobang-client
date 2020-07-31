@@ -4,6 +4,7 @@
 class HallScene extends Scene implements eui.UIComponent {
     private createRoom: eui.Button;
     private fastGame: eui.Button;
+    private roomListScroller: RoomListScroller
     private socket: Socket;
 
     constructor() {
@@ -21,15 +22,19 @@ class HallScene extends Scene implements eui.UIComponent {
 
     protected onComplete() {
         this.socket.sendMessage("0", JSON.stringify({ "userId": 1, "password": 123 }));//登录模拟
-        this.createRoom.addEventListener(egret.TouchEvent.TOUCH_TAP,this.create,this);
-        this.fastGame.addEventListener(egret.TouchEvent.TOUCH_TAP,this.fast,this);
+        this.createRoom.addEventListener(egret.TouchEvent.TOUCH_TAP, this.create, this);
+        this.fastGame.addEventListener(egret.TouchEvent.TOUCH_TAP, this.fast, this);
     }
 
-    private create(){
+    private create() {
         SecneManager.instance.changeScene(new RoomScene());
     }
 
-    private fast(){
+    private fast() {
         console.log("快速开始")
+    }
+
+    private turnPage() {
+        console.log("test");
     }
 }

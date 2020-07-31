@@ -35,6 +35,9 @@ var HallScene = (function (_super) {
     HallScene.prototype.fast = function () {
         console.log("快速开始");
     };
+    HallScene.prototype.turnPage = function () {
+        console.log("test");
+    };
     return HallScene;
 }(Scene));
 __reflect(HallScene.prototype, "HallScene", ["eui.UIComponent", "egret.DisplayObject"]);

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FastGameButtonSkin"
+	states="up,down,disabled" width="200"
+	height="90" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="fast_game_down_png" includeIn="down" x="0" y="0" width="200" height="90"/>
+	<e:Image source="fast_game_png" x="0" y="0" width="200" height="90" includeIn="up,disabled"/>
+</e:Skin>

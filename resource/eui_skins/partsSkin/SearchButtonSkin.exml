@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SearchButtonSkin"
+	states="up,down,disabled" width="65"
+	height="65" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="search_png" x="0" y="0" width="65" height="65"/>
+</e:Skin>
