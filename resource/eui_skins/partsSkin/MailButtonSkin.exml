@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MailButtonSkin"
+	states="up,down,disabled" width="200"
+	height="94" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="mail_png" includeIn="down" x="26.629" y="8.678" width="150" height="78"/>
+	<e:Image source="mail_png" includeIn="up" x="0" width="200" height="94" visible="true"/>
+	<e:Image source="mail_png" x="0" y="0" width="200" height="94" includeIn="disabled" anchorOffsetX.up="0" width.up="178.513" anchorOffsetY.up="0" height.up="84.791" x.up="271.302" y.up="30.283" visible="true"/>
+</e:Skin>

@@ -1,7 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="LoadSceneSkin"
+<e:Skin class="LoadPanelSkin"
 	 width="1450"
-	height="910" xmlns:e="http://ns.egret.com/eui">
-	<e:Rect width="1450" height="910" x="0" y="0" fillAlpha="0.6"/>
-	<e:Button label="Button" x="591" y="383"/>
+	height="910" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+		<tween:TweenGroup id="load">
+			<tween:TweenItem target="{image}">
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{88.045}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{180.541}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{270.541}"/>
+					</tween:props>
+				</tween:To>
+				<tween:To duration="250">
+					<tween:props>
+						<e:Object rotation="{359.021}"/>
+					</tween:props>
+				</tween:To>
+			</tween:TweenItem>
+		</tween:TweenGroup>
+	</w:Declarations>
+	<e:Rect width="1450" height="910" x="0" y="0" fillAlpha="0.2"/>
+	<e:Image id="image" source="load_png" x="725" y="455" anchorOffsetX="56.5" anchorOffsetY="59.5"/>
 </e:Skin>

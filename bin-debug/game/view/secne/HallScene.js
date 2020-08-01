@@ -13,6 +13,7 @@ r.prototype = e.prototype, t.prototype = new r();
  */
 var HallScene = (function (_super) {
     __extends(HallScene, _super);
+    // private mailButton:eui.Button;
     function HallScene() {
         var _this = _super.call(this) || this;
         _this.socket = Socket.instance;
@@ -28,15 +29,13 @@ var HallScene = (function (_super) {
         this.socket.sendMessage("0", JSON.stringify({ "userId": 1, "password": 123 })); //登录模拟
         this.createRoom.addEventListener(egret.TouchEvent.TOUCH_TAP, this.create, this);
         this.fastGame.addEventListener(egret.TouchEvent.TOUCH_TAP, this.fast, this);
+        // this.mailButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.fast,this);
     };
     HallScene.prototype.create = function () {
         SecneManager.instance.changeScene(new RoomScene());
     };
     HallScene.prototype.fast = function () {
         console.log("快速开始");
-    };
-    HallScene.prototype.turnPage = function () {
-        console.log("test");
     };
     return HallScene;
 }(Scene));
