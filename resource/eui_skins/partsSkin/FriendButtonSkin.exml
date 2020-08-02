@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FriendButtonSkin"
+	states="up,down,disabled" width="200"
+	height="94" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="friend_png" x="0" y="0" width="200" height="94" width.down="150" height.down="80" x.down="25" y.down="8"/>
+</e:Skin>

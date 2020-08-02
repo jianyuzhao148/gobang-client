@@ -2,5 +2,7 @@
 <e:Skin class="TaskButtonSkin"
 	states="up,down,disabled" width="200"
 	height="94" xmlns:e="http://ns.egret.com/eui">
-	<e:Image source="task_png" includeIn="up" x="0" y="0"/>
+	<e:Image source="task_png" includeIn="disabled" x="0" y="0"/>
+	<e:Image source="task_png" includeIn="down" x="25" y="8" width="150" height="80"/>
+	<e:Image source="task_png" includeIn="up" x="0" y="0" width="200"/>
 </e:Skin>

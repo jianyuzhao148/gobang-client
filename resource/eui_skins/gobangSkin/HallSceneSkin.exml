@@ -87,9 +87,9 @@
 		</e:Group>
 	</e:Group>
 	<e:Group width="920" height="94" x="507" y="796.41" anchorOffsetX="0" visible="true">
-		<e:Image source="friend_png" x="480" y="0" width="200"/>
-		<e:Image source="shop_png" x="240" y="0" width="200"/>
-		<e:Image source="task_png" x="0" y="0" width="200"/>
-		<e:Button label="Button" x="720" y="-0.41" skinName="MailButtonSkin"/>
+		<e:Button id="mail" label="Button" x="720" y="-0.41" skinName="MailButtonSkin"/>
+		<e:Button id="friend" label="Button" x="480" y="0" skinName="FriendButtonSkin"/>
+		<e:Button id="shop" label="Button" x="240" y="0" skinName="ShopButtonSkin"/>
+		<e:Button id="task" label="Button" x="0" y="0" skinName="TaskButtonSkin"/>
 	</e:Group>
 </e:Skin>
