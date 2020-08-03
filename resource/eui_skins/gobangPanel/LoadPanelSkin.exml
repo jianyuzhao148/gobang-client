@@ -25,6 +25,9 @@
 						<e:Object rotation="{359.021}"/>
 					</tween:props>
 				</tween:To>
+                <tween:props>
+         			<e:Object loop="true"/>
+   				</tween:props>
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>

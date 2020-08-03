@@ -21,6 +21,9 @@ var LoadPanel = (function (_super) {
     };
     LoadPanel.prototype.childrenCreated = function () {
         _super.prototype.childrenCreated.call(this);
+        this.load.play();
+        // this.load.addEventListener("complete",,this);
+        // this.load.addEventListener("itemComplete")
     };
     LoadPanel.prototype.onComplete = function () {
     };

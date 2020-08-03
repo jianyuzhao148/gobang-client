@@ -29,6 +29,9 @@
 		"resource/eui_skins/partsSkin/FastGameButtonSkin.exml",
 		"resource/eui_skins/partsSkin/SearchButtonSkin.exml",
 		"resource/eui_skins/partsSkin/MailButtonSkin.exml",
+		"resource/eui_skins/partsSkin/FriendButtonSkin.exml",
+		"resource/eui_skins/partsSkin/ShopButtonSkin.exml",
+		"resource/eui_skins/partsSkin/TaskButtonSkin.exml",
 		"resource/eui_skins/gobangSkin/HallSceneSkin.exml",
 		"resource/eui_skins/gobangSkin/RoomSceneSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
@@ -37,16 +40,13 @@
 		"resource/eui_skins/PanelSkin.exml",
 		"resource/eui_skins/partsSkin/RoomListItemSkin.exml",
 		"resource/eui_skins/partsSkin/RoomListScrollerSkin.exml",
-		"resource/eui_skins/partsSkin/TaskButtonSkin.exml",
 		"resource/eui_skins/ProgressBarSkin.exml",
 		"resource/eui_skins/RadioButtonSkin.exml",
 		"resource/eui_skins/ScrollerSkin.exml",
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml",
-		"resource/eui_skins/partsSkin/FriendButtonSkin.exml",
-		"resource/eui_skins/partsSkin/ShopButtonSkin.exml"
+		"resource/eui_skins/VSliderSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }

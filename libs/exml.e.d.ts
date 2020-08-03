@@ -36,6 +36,8 @@ declare class CreateButtonSkin extends eui.Skin{
 }
 declare class FastGameButtonSkin extends eui.Skin{
 }
+declare class FriendButtonSkin extends eui.Skin{
+}
 declare class MailButtonSkin extends eui.Skin{
 }
 declare class RoomListItemSkin extends eui.Skin{
@@ -43,6 +45,8 @@ declare class RoomListItemSkin extends eui.Skin{
 declare class roomListSkin extends eui.Skin{
 }
 declare class SearchButtonSkin extends eui.Skin{
+}
+declare class ShopButtonSkin extends eui.Skin{
 }
 declare class TaskButtonSkin extends eui.Skin{
 }

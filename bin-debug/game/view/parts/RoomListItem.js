@@ -25,8 +25,12 @@ var RoomListItem = (function (_super) {
         circle.graphics.endFill();
         this.playerGroup1.addChild(circle);
         this.playerImage1.mask = circle;
-        this.playerGroup2.addChild(circle);
-        this.playerImage2.mask = circle;
+        var circle2 = new egret.Shape();
+        circle2.graphics.beginFill(0x0000ff);
+        circle2.graphics.drawCircle(40, 40, 40);
+        circle2.graphics.endFill();
+        this.playerGroup2.addChild(circle2);
+        this.playerImage2.mask = circle2;
     };
     return RoomListItem;
 }(eui.ItemRenderer));

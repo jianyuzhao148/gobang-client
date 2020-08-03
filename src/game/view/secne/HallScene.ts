@@ -2,11 +2,13 @@
  * 大厅场景
  */
 class HallScene extends Scene implements eui.UIComponent {
-    private createRoom: eui.Button;
-    private fastGame: eui.Button;
-    private roomListScroller: RoomListScroller
+
+    private nickname:eui.Label;
+    private title :eui.Label;
+    private probability :eui.Label;
+    private wealth :eui.Label;
+    private total :eui.Label;
     private socket: Socket;
-    // private mailButton:eui.Button;
 
     constructor() {
         super();
@@ -19,22 +21,11 @@ class HallScene extends Scene implements eui.UIComponent {
 
     protected childrenCreated(): void {
         super.childrenCreated();
+        
     }
 
+    @Global.responseListen("0")
     protected onComplete() {
         this.socket.sendMessage("0", JSON.stringify({ "userId": 1, "password": 123 }));//登录模拟
-        this.createRoom.addEventListener(egret.TouchEvent.TOUCH_TAP, this.create, this);
-        this.fastGame.addEventListener(egret.TouchEvent.TOUCH_TAP, this.fast, this);
-        // this.mailButton.addEventListener(egret.TouchEvent.TOUCH_TAP,this.fast,this);
     }
-
-    private create() {
-        SecneManager.instance.changeScene(new RoomScene());
-    }
-
-    private fast() {
-        console.log("快速开始")
-    }
-
-
 }

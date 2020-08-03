@@ -13,6 +13,6 @@
     },
     "include": [
         "src",
-        "libs", "socket.io"
+        "libs", "socket.io", "src/game/net/.ts"
     ]
 }
