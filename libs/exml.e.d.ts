@@ -8,8 +8,6 @@ declare module skins{
 }
 declare class LoadPanelSkin extends eui.Skin{
 }
-declare class UserInfoPanelSkin extends eui.Skin{
-}
 declare module game{
 	class exmlSkin extends eui.Skin{
 	}

@@ -23,6 +23,24 @@ var RoomScene = (function (_super) {
         _super.prototype.childrenCreated.call(this);
     };
     RoomScene.prototype.onComplete = function () {
+        var shp = new egret.Shape();
+        shp.graphics.lineStyle(2, 0x000000);
+        shp.graphics.moveTo(40, 40);
+        var k = 40;
+        for (var i = 0; i < 15; i++) {
+            shp.graphics.lineTo(840, k);
+            k = k + 57;
+            shp.graphics.moveTo(40, k);
+        }
+        k = 40;
+        shp.graphics.moveTo(40, 40);
+        for (var i = 0; i < 15; i++) {
+            shp.graphics.lineTo(k, 840);
+            k = k + 57;
+            shp.graphics.moveTo(k, 40);
+        }
+        shp.graphics.endFill();
+        this.checkerboardGroup.addChild(shp);
     };
     return RoomScene;
 }(Scene));

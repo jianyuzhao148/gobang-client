@@ -3,8 +3,9 @@
  */
 var Global;
 (function (Global) {
-    function responseListen(responseNum) {
+    function responseListen(responseNum, func) {
         return function (target, methodName, descriptor) {
+            Socket.instance.getMessage(responseNum, func);
         };
     }
     Global.responseListen = responseListen;

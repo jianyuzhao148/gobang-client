@@ -44,7 +44,7 @@
 			</e:Group>
 		</e:Group>
 	</e:Group>
-	<e:Group width="880" height="880" x="538" y="15" anchorOffsetX="0" anchorOffsetY="0">
+	<e:Group id="checkerboardGroup" width="880" height="880" x="538" y="15" anchorOffsetX="0" anchorOffsetY="0">
 		<e:Image source="user_info_png" x="0" y="0" scale9Grid="30,27,17,21" anchorOffsetX="0" width="880" anchorOffsetY="0" height="880" scaleX="1" scaleY="1"/>
 	</e:Group>
 </e:Skin>

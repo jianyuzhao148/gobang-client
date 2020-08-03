@@ -10,6 +10,8 @@ class HallScene extends Scene implements eui.UIComponent {
     private total :eui.Label;
     private socket: Socket;
 
+    private createRoom:eui.Button;
+
     constructor() {
         super();
         this.socket = Socket.instance;
@@ -24,8 +26,17 @@ class HallScene extends Scene implements eui.UIComponent {
         
     }
 
-    @Global.responseListen("0")
+    @Global.responseListen("0",(data,target)=>{
+        console.log(data);
+        console.log(target)
+    })
     protected onComplete() {
         this.socket.sendMessage("0", JSON.stringify({ "userId": 1, "password": 123 }));//登录模拟
+        this.createRoom.addEventListener(egret.TouchEvent.TOUCH_TAP,this.create,this);
+
+    }
+
+    private create(){
+        SecneManager.instance.changeScene(new RoomScene());
     }
 }

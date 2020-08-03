@@ -32,9 +32,16 @@ var HallScene = (function (_super) {
     };
     HallScene.prototype.onComplete = function () {
         this.socket.sendMessage("0", JSON.stringify({ "userId": 1, "password": 123 })); //登录模拟
+        this.createRoom.addEventListener(egret.TouchEvent.TOUCH_TAP, this.create, this);
+    };
+    HallScene.prototype.create = function () {
+        SecneManager.instance.changeScene(new RoomScene());
     };
     __decorate([
-        Global.responseListen("0")
+        Global.responseListen("0", function (data, target) {
+            console.log(data);
+            console.log(target);
+        })
     ], HallScene.prototype, "onComplete", null);
     return HallScene;
 }(Scene));

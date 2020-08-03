@@ -11,6 +11,7 @@ class Socket {
             this._socket = new Socket();
         }
         return Socket._socket;
+        
     }
 
     /**
@@ -28,6 +29,6 @@ class Socket {
      * @param func 
      */
     public getMessage(mesNum: string,func:Function) {
-        this.socketio.on(mesNum, func);
+        this.socketio.on(mesNum,func);
     }
 }
