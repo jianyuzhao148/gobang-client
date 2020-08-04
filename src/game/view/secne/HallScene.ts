@@ -2,15 +2,11 @@
  * 大厅场景
  */
 class HallScene extends Scene implements eui.UIComponent {
-
-    private nickname:eui.Label;
-    private title :eui.Label;
-    private probability :eui.Label;
-    private wealth :eui.Label;
-    private total :eui.Label;
     private socket: Socket;
+    private userInfoList:eui.List;
+    private newsList:eui.List;
 
-    private createRoom:eui.Button;
+    private task:eui.Button;
 
     constructor() {
         super();
@@ -23,20 +19,29 @@ class HallScene extends Scene implements eui.UIComponent {
 
     protected childrenCreated(): void {
         super.childrenCreated();
-        
     }
 
-    @Global.responseListen("0",(data,target)=>{
-        console.log(data);
-        console.log(target)
-    })
     protected onComplete() {
-        this.socket.sendMessage("0", JSON.stringify({ "userId": 1, "password": 123 }));//登录模拟
-        this.createRoom.addEventListener(egret.TouchEvent.TOUCH_TAP,this.create,this);
 
+        this.userInfoList.dataProvider=new eui.ArrayCollection([{}]);
+        this.userInfoList.itemRenderer=UserInfo;
+
+
+        this.newsList.dataProvider=new eui.ArrayCollection([{news:"这是一条新闻测试请忽略"},{news:"这是一条新闻测试请忽略"},{news:"这是一条新闻测试请忽略"},{news:"这是一条新闻测试请忽略"},{news:"这是一条新闻测试请忽略"},{news:"这是一条新闻测试请忽略"},{news:"这是一条新闻测试请忽略"},{news:"这是一条新闻测试请忽略"},{news:"这是一条新闻测试请忽略"}]);
+        this.newsList.addEventListener(eui.ItemTapEvent.ITEM_TAP,this.selectElement,this);
+
+
+
+        this.socket.sendMessage("0", JSON.stringify({ "userId": 1, "password": 123 }),this.handle);
     }
 
-    private create(){
-        SecneManager.instance.changeScene(new RoomScene());
+    private handle(e){
+        let data=JSON.parse(e.data);
+        console.log(data);
+        this.removeEventListener(ResponseEvent.DATA,this.handle,Socket)
+    }
+
+    private selectElement(e: eui.PropertyEvent): void {
+        console.log("你选择了" + this.newsList.selectedItem + "," + this.newsList.selectedIndex)
     }
 }

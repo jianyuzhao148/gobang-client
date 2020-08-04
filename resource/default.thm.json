@@ -17,7 +17,9 @@
 		"HallScene": "resource/eui_skins/gobangSkin/HallSceneSkin.exml",
 		"RoomScene": "resource/eui_skins/gobangSkin/RoomSceneSkin.exml",
 		"RoomListScroller": "resource/eui_skins/partsSkin/RoomListScrollerSkin.exml",
-		"RoomListItem": "resource/eui_skins/partsSkin/RoomListItemSkin.exml"
+		"RoomListItem": "resource/eui_skins/partsSkin/RoomListItemSkin.exml",
+		"UserInfo": "resource/eui_skins/partsSkin/UserInfoSkin.exml",
+		"NewsItem":"resource/eui_skins/partsSkin/NewsItemSkin.exml"
 	},
 	"autoGenerateExmlsList": true,
 	"exmls": [
@@ -29,23 +31,25 @@
 		"resource/eui_skins/partsSkin/ShopButtonSkin.exml",
 		"resource/eui_skins/partsSkin/TaskButtonSkin.exml",
 		"resource/eui_skins/partsSkin/SearchButtonSkin.exml",
-		"resource/eui_skins/partsSkin/CreateButtonSkin.exml",
-		"resource/eui_skins/partsSkin/FastGameButtonSkin.exml",
 		"resource/eui_skins/gobangSkin/HallSceneSkin.exml",
 		"resource/eui_skins/gobangSkin/RoomSceneSkin.exml",
 		"resource/eui_skins/HScrollBarSkin.exml",
 		"resource/eui_skins/HSliderSkin.exml",
 		"resource/eui_skins/ItemRendererSkin.exml",
 		"resource/eui_skins/PanelSkin.exml",
+		"resource/eui_skins/partsSkin/CreateButtonSkin.exml",
+		"resource/eui_skins/partsSkin/FastGameButtonSkin.exml",
 		"resource/eui_skins/partsSkin/RoomListItemSkin.exml",
 		"resource/eui_skins/partsSkin/RoomListScrollerSkin.exml",
+		"resource/eui_skins/partsSkin/UserInfoSkin.exml",
 		"resource/eui_skins/ProgressBarSkin.exml",
 		"resource/eui_skins/RadioButtonSkin.exml",
 		"resource/eui_skins/ScrollerSkin.exml",
 		"resource/eui_skins/TextInputSkin.exml",
 		"resource/eui_skins/ToggleSwitchSkin.exml",
 		"resource/eui_skins/VScrollBarSkin.exml",
-		"resource/eui_skins/VSliderSkin.exml"
+		"resource/eui_skins/VSliderSkin.exml",
+		"resource/eui_skins/partsSkin/NewsItemSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UserInfoSkin"
+	 width="480"
+	height="478" xmlns:e="http://ns.egret.com/eui">
+     <e:Group id="userInfo" width="480" height="478" y="0" x="0" anchorOffsetX="-2.131" anchorOffsetY="0" visible="true" scaleX="1" scaleY="1">
+			<e:Image id="headImage" width="98" height="98" x="54.956" y="68.213" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" source="{data.image}"/>
+			<e:Group width="480" height="90" x="0" y="360">
+					
+						
+						
+					
+					
+					
+				
+			<e:Button id="createRoom" label="Button" x="25" y="0" skinName="CreateButtonSkin" scaleX="1" scaleY="1"/>
+			<e:Button id="fastGame" label="快速开始" x="255" y="0" anchorOffsetX="0" width="200" anchorOffsetY="0" height="90" skinName="FastGameButtonSkin" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Label text="昵称：" x="250" y="24"/>
+			<e:Label text="称号：" x="250" y="87"/>
+			<e:Label text="胜率：" x="250" y="157"/>
+			<e:Label text="局数：" x="20" y="250"/>
+			<e:Label text="财富：" x="250" y="250"/>
+			<e:Label id="nickname" x="352" y="24" text="{data.nickname}"/>
+			<e:Label id="title" x="352" y="87" text="{data.title}"/>
+			<e:Label id="probability" x="352" y="157" text="{data.probability}"/>
+			<e:Label id="wealth" x="352" y="250" text="{data.wealth}"/>
+			<e:Label id="total" x="121" y="250" text="{data.total}"/>
+				<e:Image source="icon_head_png" x="20" y="24" anchorOffsetX="0" width="170" anchorOffsetY="0" height="180" visible="true" scaleX="1" scaleY="1"/>
+		</e:Group>
+</e:Skin>

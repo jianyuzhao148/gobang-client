@@ -27,6 +27,7 @@ class Main extends eui.UILayer {
     }
 
     private async runGame() {
+        Socket.instance.getMessage("0");
         mouse.enable(this.stage);
         SecneManager.instance.rootLayer = this;
         await this.loadResource()

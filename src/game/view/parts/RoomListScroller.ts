@@ -14,14 +14,14 @@ class RoomListScroller extends eui.Scroller implements eui.UIComponent {
 
     protected childrenCreated(): void {
         super.childrenCreated();
-        this.roomList.dataProvider = new eui.ArrayCollection([{ image: "resource/assets/Default.jpg", image2: "resource/assets/Default.jpg" },
-            { image: "resource/assets/Default.jpg", image2: "resource/assets/Default.jpg" },
-            { image: "resource/assets/Default.jpg", image2: "resource/assets/Default.jpg" },
-            { image: "resource/assets/Default.jpg", image2: "resource/assets/Default.jpg" },
-            { image: "resource/assets/Default.jpg", image2: "resource/assets/Default.jpg" },
-            { image: "resource/assets/Default.jpg", image2: "resource/assets/Default.jpg" },
-            { image: "resource/assets/Default.jpg", image2: "resource/assets/Default.jpg" },
-            { image: "resource/assets/Default.jpg", image2: "resource/assets/Default.jpg" }]);
+        this.roomList.dataProvider = new eui.ArrayCollection([{ image: "resource/assets/default.jpg", image2: "resource/assets/default.jpg" },
+            { image: "resource/assets/default.jpg", image2: "resource/assets/default.jpg" },
+            { image: "resource/assets/default.jpg", image2: "resource/assets/default.jpg" },
+            { image: "resource/assets/default.jpg", image2: "resource/assets/default.jpg" },
+            { image: "resource/assets/default.jpg", image2: "resource/assets/default.jpg" },
+            { image: "resource/assets/default.jpg", image2: "resource/assets/default.jpg" },
+            { image: "resource/assets/default.jpg", image2: "resource/assets/default.jpg" },
+            { image: "resource/assets/default.jpg", image2: "resource/assets/default.jpg" }]);
         this.roomList.addEventListener(eui.ItemTapEvent.ITEM_TAP,this.selectElement,this);
         this.roomList.itemRenderer=RoomListItem;
         this.viewport=this.roomList;

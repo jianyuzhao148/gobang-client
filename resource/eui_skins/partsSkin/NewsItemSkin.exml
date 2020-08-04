@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NewsItemSkin"
+	 width="430"
+	height="66" xmlns:e="http://ns.egret.com/eui">
+	<e:Label text="{data.news}" x="30" y="0" width="370" height="66" textAlign="left" verticalAlign="middle" size="25" fontFamily="Arial"/>
+</e:Skin>

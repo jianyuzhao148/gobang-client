@@ -12,18 +12,20 @@
 	],
 	"game": [
 		"bin-debug/game/view/secne/Scene.js",
-		"bin-debug/game/net/Global.js",
+		"bin-debug/AssetAdapter.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
-		"bin-debug/AssetAdapter.js",
+		"bin-debug/game/net/ResponseEvent.js",
 		"bin-debug/game/net/Socket.js",
+		"bin-debug/game/view/SceneManager.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/game/view/parts/RoomListItem.js",
 		"bin-debug/game/view/parts/RoomListScroller.js",
+		"bin-debug/game/view/parts/UserInfo.js",
 		"bin-debug/game/view/secne/HallScene.js",
 		"bin-debug/game/view/secne/LoadPanel.js",
 		"bin-debug/game/view/secne/RoomScene.js",
-		"bin-debug/game/view/SceneManager.js"
+		"bin-debug/game/view/parts/NewsItem.js"
 	]
 }

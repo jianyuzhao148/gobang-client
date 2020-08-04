@@ -48,6 +48,8 @@ declare class ShopButtonSkin extends eui.Skin{
 }
 declare class TaskButtonSkin extends eui.Skin{
 }
+declare class UserInfoSkin extends eui.Skin{
+}
 declare module skins{
 	class ProgressBarSkin extends eui.Skin{
 	}

@@ -8,12 +8,6 @@ var __extends = this && this.__extends || function __extends(t, e) {
 for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i]);
 r.prototype = e.prototype, t.prototype = new r();
 };
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
 /**
  * 大厅场景
  */
@@ -31,18 +25,20 @@ var HallScene = (function (_super) {
         _super.prototype.childrenCreated.call(this);
     };
     HallScene.prototype.onComplete = function () {
-        this.socket.sendMessage("0", JSON.stringify({ "userId": 1, "password": 123 })); //登录模拟
-        this.createRoom.addEventListener(egret.TouchEvent.TOUCH_TAP, this.create, this);
+        this.userInfoList.dataProvider = new eui.ArrayCollection([{}]);
+        this.userInfoList.itemRenderer = UserInfo;
+        this.newsList.dataProvider = new eui.ArrayCollection([{ news: "这是一条新闻测试请忽略" }, { news: "这是一条新闻测试请忽略" }, { news: "这是一条新闻测试请忽略" }, { news: "这是一条新闻测试请忽略" }, { news: "这是一条新闻测试请忽略" }, { news: "这是一条新闻测试请忽略" }, { news: "这是一条新闻测试请忽略" }, { news: "这是一条新闻测试请忽略" }, { news: "这是一条新闻测试请忽略" }]);
+        this.newsList.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.selectElement, this);
+        this.socket.sendMessage("0", JSON.stringify({ "userId": 1, "password": 123 }), this.handle);
     };
-    HallScene.prototype.create = function () {
-        SecneManager.instance.changeScene(new RoomScene());
+    HallScene.prototype.handle = function (e) {
+        var data = JSON.parse(e.data);
+        console.log(data);
+        this.removeEventListener(ResponseEvent.DATA, this.handle, Socket);
     };
-    __decorate([
-        Global.responseListen("0", function (data, target) {
-            console.log(data);
-            console.log(target);
-        })
-    ], HallScene.prototype, "onComplete", null);
+    HallScene.prototype.selectElement = function (e) {
+        console.log("你选择了" + this.newsList.selectedItem + "," + this.newsList.selectedIndex);
+    };
     return HallScene;
 }(Scene));
 __reflect(HallScene.prototype, "HallScene", ["eui.UIComponent", "egret.DisplayObject"]);

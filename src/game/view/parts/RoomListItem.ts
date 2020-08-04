@@ -5,7 +5,7 @@ class RoomListItem extends eui.ItemRenderer {
     private playerGroup1: eui.Group;
     private playerImage1: eui.Image;
     private playerGroup2: eui.Group;
-    private playerImage2: eui.Image
+    private playerImage2: eui.Image;
 
     public constructor() {
         super();
