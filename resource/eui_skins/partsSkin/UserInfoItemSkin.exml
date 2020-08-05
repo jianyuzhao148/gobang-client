@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="UserInfoSkin"
+<e:Skin class="UserInfoItemSkin"
 	 width="480"
 	height="478" xmlns:e="http://ns.egret.com/eui">
      <e:Group id="userInfo" width="480" height="478" y="0" x="0" anchorOffsetX="-2.131" anchorOffsetY="0" visible="true" scaleX="1" scaleY="1">
@@ -20,7 +20,7 @@
 			<e:Label text="胜率：" x="250" y="157"/>
 			<e:Label text="局数：" x="20" y="250"/>
 			<e:Label text="财富：" x="250" y="250"/>
-			<e:Label id="nickname" x="352" y="24" text="{data.nickname}"/>
+			<e:Label id="nickname" x="352" y="24" text="{data.name}"/>
 			<e:Label id="title" x="352" y="87" text="{data.title}"/>
 			<e:Label id="probability" x="352" y="157" text="{data.probability}"/>
 			<e:Label id="wealth" x="352" y="250" text="{data.wealth}"/>

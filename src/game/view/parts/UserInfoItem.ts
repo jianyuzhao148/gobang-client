@@ -1,4 +1,4 @@
-class UserInfo extends eui.ItemRenderer{
+class UserInfoItem extends eui.ItemRenderer{
     private createRoom:eui.Button;
     private fastGame:eui.Button;
 

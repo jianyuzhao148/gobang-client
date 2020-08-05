@@ -1,9 +1,8 @@
-class Socket extends eui.Component{
+class Socket {
     public static _socket: Socket;
     private socketio: SocketIOClient.Socket;
 
     public constructor() {
-        super()
         this.socketio = io.connect("http://192.168.1.110:8081/gobang");
     }
 
@@ -19,20 +18,24 @@ class Socket extends eui.Component{
      * @param msgNum 
      * @param msg 
      */
-    public sendMessage(msgNum: string, msg: string,func:Function) {
+    public sendMessage(msgNum: string, msg: string): Promise<any> {
         this.socketio.emit(msgNum, msg);
-        this.addEventListener(ResponseEvent.DATA,func,this);
+
+        let promise = new Promise(async (resolve, reject) => {
+            this.socketio.on(msgNum, (data) => {
+                resolve(data);
+            });
+        });
+        return promise;
     }
 
     /**
      * 获取响应
      * @param mesNum
      */
-    public getMessage(mesNum: string) {
-        this.socketio.on(mesNum,(data)=>{
-            let responseEvent:ResponseEvent=new ResponseEvent(ResponseEvent.DATA);
-            responseEvent.data=data;
-            this.dispatchEvent(responseEvent);
+    public getMessage(msgNum: string){
+        this.socketio.on(msgNum,(data)=>{
+            // console.log(data)
         });
     }
 }

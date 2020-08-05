@@ -6,6 +6,8 @@ declare module skins{
 	class CheckBoxSkin extends eui.Skin{
 	}
 }
+declare class CardPanelSkin extends eui.Skin{
+}
 declare class LoadPanelSkin extends eui.Skin{
 }
 declare module game{
@@ -38,9 +40,11 @@ declare class FriendButtonSkin extends eui.Skin{
 }
 declare class MailButtonSkin extends eui.Skin{
 }
-declare class RoomListItemSkin extends eui.Skin{
+declare class NewsItemSkin extends eui.Skin{
 }
-declare class roomListSkin extends eui.Skin{
+declare class OutButtonSkin extends eui.Skin{
+}
+declare class RoomListItemSkin extends eui.Skin{
 }
 declare class SearchButtonSkin extends eui.Skin{
 }
@@ -48,7 +52,7 @@ declare class ShopButtonSkin extends eui.Skin{
 }
 declare class TaskButtonSkin extends eui.Skin{
 }
-declare class UserInfoSkin extends eui.Skin{
+declare class UserInfoItemSkin extends eui.Skin{
 }
 declare module skins{
 	class ProgressBarSkin extends eui.Skin{

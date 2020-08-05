@@ -1,12 +1,48 @@
 <?xml version='1.0' encoding='utf-8'?>
 <e:Skin class="RoomListItemSkin"
 	 width="850"
-	height="120" xmlns:e="http://ns.egret.com/eui">
-	<e:Image source="item_bg_png" x="0" y="0" scale9Grid="26,26,25,25" width="850" height="120"/>
-	<e:Group id="playerGroup1" width="80" height="80" x="230" y="20">
-		<e:Image id="playerImage1" width="80" height="80" x="0" y="0" source="{data.image}" scaleX="1" scaleY="1"/>
-	</e:Group>
-	<e:Group id="playerGroup2" width="80" height="80" x="504.276" y="20">
-		<e:Image id="playerImage2" width="80" height="80" x="0" y="0" source="{data.image2}" scaleX="1" scaleY="1"/>
+	height="130" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="850" height="120" x="0" y="5">
+		<e:Image source="item_bg_png" y="0" scale9Grid="26,26,25,25" width="850" height="120" scaleX="1" scaleY="1"/>
+		<e:Group width="160" height="120" x="345" y="0" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
+			
+				
+				
+			
+			<e:Label x="20" y="7" anchorOffsetX="0" width="120" anchorOffsetY="0" height="20" text="{data.title}" size="20"/>
+			<e:Label text="VS" x="27" y="35" anchorOffsetX="0" width="105" anchorOffsetY="0" height="76" textAlign="center" verticalAlign="middle" fontFamily="Arial" size="60"/>
+		</e:Group>
+		<e:Group width="200" height="80" x="29.999999999999943" y="20" scaleX="1" scaleY="1">
+			
+				
+				
+			
+			<e:Label text="{data.player1Name}" x="100" y="5" textAlign="right"/>
+			<e:Label text="{data.player1Title}" x="26" y="45" anchorOffsetX="0" width="150" textAlign="right"/>
+		</e:Group>
+		<e:Group width="200" height="80" x="620" y="20" scaleX="1" scaleY="1">
+			
+				
+					
+					
+				
+				
+				
+			
+			<e:Label text="{data.player2Name}" x="26" y="5"/>
+			<e:Label text="{data.player2Title}" x="26" y="45" anchorOffsetX="0" width="150"/>
+		</e:Group>
+		<e:Group id="playerGroup2" width="80" height="80" y="20" x="520" scaleX="1" scaleY="1">
+			
+				
+			
+			<e:Image id="playerImage2" width="80" height="80" x="0" y="0" source="{data.player2Image}" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="playerGroup1" width="80" height="80" x="250" y="20" scaleX="1" scaleY="1">
+			
+				
+			
+			<e:Image id="playerImage1" width="80" height="80" x="0" y="0" source="{data.player1Image}" scaleX="1" scaleY="1"/>
+		</e:Group>
 	</e:Group>
 </e:Skin>

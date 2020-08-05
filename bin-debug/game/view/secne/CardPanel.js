@@ -8,24 +8,23 @@ var __extends = this && this.__extends || function __extends(t, e) {
 for (var i in e) e.hasOwnProperty(i) && (t[i] = e[i]);
 r.prototype = e.prototype, t.prototype = new r();
 };
-/**
- * 载入
- */
-var LoadPanel = (function (_super) {
-    __extends(LoadPanel, _super);
-    function LoadPanel() {
+var CardPanel = (function (_super) {
+    __extends(CardPanel, _super);
+    function CardPanel() {
         return _super.call(this) || this;
     }
-    LoadPanel.prototype.partAdded = function (partName, instance) {
+    CardPanel.prototype.partAdded = function (partName, instance) {
         _super.prototype.partAdded.call(this, partName, instance);
     };
-    LoadPanel.prototype.childrenCreated = function () {
+    CardPanel.prototype.childrenCreated = function () {
         _super.prototype.childrenCreated.call(this);
-        this.load.play();
     };
-    LoadPanel.prototype.onComplete = function () {
+    CardPanel.prototype.onComplete = function () {
+        this.closeCard.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
+            SecneManager.instance.popScene();
+        }, this);
     };
-    return LoadPanel;
+    return CardPanel;
 }(Scene));
-__reflect(LoadPanel.prototype, "LoadPanel", ["eui.UIComponent", "egret.DisplayObject"]);
-//# sourceMappingURL=LoadPanel.js.map
+__reflect(CardPanel.prototype, "CardPanel", ["eui.UIComponent", "egret.DisplayObject"]);
+//# sourceMappingURL=CardPanel.js.map

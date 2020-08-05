@@ -16,7 +16,7 @@
 			<e:Button id="shop" label="Button" x="240" y="0" skinName="ShopButtonSkin"/>
 			<e:Button id="task" label="Button" x="0" y="0" skinName="TaskButtonSkin"/>
 		</e:Group>
-		<e:Group width="920" height="770" x="490" y="0" anchorOffsetX="0" anchorOffsetY="0" visible="true" scaleX="1" scaleY="1" locked="true">
+		<e:Group width="920" height="770" x="490" y="0" anchorOffsetX="0" anchorOffsetY="0" visible="true" scaleX="1" scaleY="1">
 			
 				
 				
@@ -27,51 +27,18 @@
 			
 			<e:Rect width="920" height="660" x="0" y="90" scaleX="1" scaleY="1" fillColor="0x2EB0DB" visible="true" locked="true"/>
 			<e:Image source="table_box_middle_png" x="0" y="110" scaleX="1" scaleY="1" width="920" height="630" scale9Grid="30,0,445,4" visible="true" locked="true"/>
-			<ns1:RoomListScroller id="roomListScroller" width="850" height="630" x="35" y="110" anchorOffsetX="0" anchorOffsetY="0" scrollPolicyH="auto" scrollPolicyV="auto" locked="true">
+			<e:Scroller id="roomScroller" width="860" height="630" x="30" y="110" anchorOffsetX="0" anchorOffsetY="0">
 				
-					
-							
-									
-											
-													
-														
-													
-													
-												
-											
-										
-									
-								
 							
 						
-					
-				
-			<e:Group anchorOffsetY="0" height="700"/>
-			</ns1:RoomListScroller>
-			<e:Image source="table_box_up_png" x="0" y="70" scaleX="1" scaleY="1" width="920" scale9Grid="45,1,421,30" visible="true"/>
+				<e:List id="roomList" itemRendererSkinName="RoomListItemSkin"/>
+			</e:Scroller>
+			<e:Image source="table_box_up_png" x="0" y="70" scaleX="1" scaleY="1" width="920" scale9Grid="45,1,421,30" visible="true" locked="true"/>
 			<e:Image source="table_box_down2_png" x="0.644" y="706.197" scaleX="1" scaleY="1" width="920" visible="true" anchorOffsetY="0" height="63.497" scale9Grid="41,1,339,92" locked="true"/>
 			<e:Group width="920" height="65" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" visible="true">
-			<e:Group width="920" height="65" x="0" y="0" anchorOffsetX="0" scaleX="1" scaleY="1">
-					
-						
-							
-								
-										
-										
-									
-								
-								
-							
-							
-							
-						
-					
-					
-					
-				<e:Image source="icon_line_png" x="1" y="0" scale9Grid="65,18,64,28" anchorOffsetX="0" width="844.571" height="65"/>
-				<e:TextInput id="searchInput" width="782.062" height="35" x="40" y="20" anchorOffsetX="0" alpha="0"/>
-				<e:Button label="Button" x="854.779" y="1" scaleX="1" scaleY="1" skinName="SearchButtonSkin"/>
-			</e:Group>
+				<e:Image source="icon_line_png" x="0.9999999999998863" y="0" scale9Grid="65,18,64,28" anchorOffsetX="0" width="844.571" height="65" scaleX="1" scaleY="1"/>
+				<e:TextInput id="searchInput" width="782.062" height="35" x="40" y="20" anchorOffsetX="0" alpha="0" scaleX="1" scaleY="1" prompt="请输入房间号"/>
+				<e:Button id="search" label="Button" x="854.7789999999999" y="1" scaleX="1" scaleY="1" skinName="SearchButtonSkin"/>
 			</e:Group>
 		</e:Group>
 		<e:Group width="480" x="0" y="489.121" anchorOffsetX="0" anchorOffsetY="0" visible="true" height="390" scaleX="1" scaleY="1" locked="true">
@@ -86,8 +53,8 @@
 			<e:Image source="table_box_down_png" x="0" y="360" scaleX="1" scaleY="1" scale9Grid="47,18,417,26" width="480" visible="true" anchorOffsetY="0" height="30"/>
 			<e:Image source="table_box_middle_png" x="0" y="30" scaleX="1" scaleY="1" width="480" height="330" visible="true" anchorOffsetY="0"/>
 			<e:Image source="table_box_up_png" x="0" y="0" scaleX="1" scaleY="1" width="480" visible="true" anchorOffsetY="0" height="30"/>
-			<e:Scroller width="430" height="330" x="25" y="30" scaleX="1" scaleY="1" locked="true">
-				<e:List id="newsList" width="430" height="330" y="30" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="NewsItemSkin"/>
+			<e:Scroller id="newsScroller" width="430" height="330" x="25" y="30" scaleX="1" scaleY="1">
+				<e:List id="newsList" width="200" height="200" x="0" y="0" itemRendererSkinName="NewsItemSkin"/>
 			</e:Scroller>
 		</e:Group>
 		
@@ -108,7 +75,7 @@
 				
 			
 			<e:Image source="user_info_png" x="0" y="0" scale9Grid="25,25,26,26" anchorOffsetX="0" width="480" anchorOffsetY="0" height="478" visible="true"/>
-			<e:List id="userInfoList" width="480" height="478" x="0" y="0" itemRendererSkinName="UserInfoSkin"/>
+			<e:List id="userInfoList" width="480" height="478" x="0" y="0" itemRendererSkinName="UserInfoItemSkin"/>
 		</e:Group>
 	</e:Group>
 </e:Skin>

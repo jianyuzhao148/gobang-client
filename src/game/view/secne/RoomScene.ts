@@ -26,7 +26,7 @@ class RoomScene extends Scene implements eui.UIComponent {
             k=k+57;
             shp.graphics.moveTo(40, k);
         }
-        k=40
+        k=40;
         shp.graphics.moveTo(40, 40)
         for(let i=0;i<15;i++){
             shp.graphics.lineTo(k, 840);

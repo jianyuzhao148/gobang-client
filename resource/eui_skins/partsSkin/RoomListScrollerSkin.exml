@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="roomListSkin"
-	 width="820"
-	height="590" xmlns:e="http://ns.egret.com/eui">
-	<e:Scroller width="820" height="590" x="0" y="0" scrollPolicyH="auto" scrollPolicyV="auto">
-        <e:List id="roomList" width="820" height="590" x="0" y="0" itemRendererSkinName="RoomListItemSkin" scaleX="1" scaleY="1"/>
-	</e:Scroller>
-</e:Skin>

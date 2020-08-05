@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,table_box_middle_png,table_box_down_png,table_box_up_png,icon_head_png,search_png,icon_line_png,table_box_down2_png,load_png,create_room_png,fast_game_png,create_room_down_png,fast_game_down_png,item_bg_png,user_info_png,clock_png,friend_png,mail_png,shop_png,task_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,table_box_middle_png,table_box_down_png,table_box_up_png,icon_head_png,search_png,icon_line_png,table_box_down2_png,load_png,create_room_png,fast_game_png,create_room_down_png,fast_game_down_png,item_bg_png,user_info_png,clock_png,friend_png,mail_png,shop_png,task_png,meun_card_png,out_png",
 			"name": "preload"
 		}
 	],
@@ -230,6 +230,16 @@
 			"url": "assets/task.png",
 			"type": "image",
 			"name": "task_png"
+		},
+		{
+			"url":"assets/meun_card.png",
+			"type": "image",
+			"name": "meun_card_png"
+		},
+		{
+			"url":"assets/out.png",
+			"type": "image",
+			"name": "out_png"
 		}
 	]
 }

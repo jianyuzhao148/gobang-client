@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CardPanelSkin"
+	 width="520"
+	height="640" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="500" height="600" x="0" y="35">
+		<e:Image source="meun_card_png" x="0" y="0" scale9Grid="63,63,64,62" anchorOffsetX="0" width="500" anchorOffsetY="0" height="600"/>
+		<e:Button id="closeCard" label="Button" x="465.00000000000006" skinName="OutButtonSkin" y="-22" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

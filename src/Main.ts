@@ -1,21 +1,6 @@
 class Main extends eui.UILayer {
     protected createChildren(): void {
         super.createChildren();
-
-        egret.lifecycle.addLifecycleListener((context) => {
-            // custom lifecycle plugin
-        })
-
-        egret.lifecycle.onPause = () => {
-            egret.ticker.pause();
-        }
-
-        egret.lifecycle.onResume = () => {
-            egret.ticker.resume();
-        }
-
-        //inject the custom material parser
-        //注入自定义的素材解析器
         let assetAdapter = new AssetAdapter();
         egret.registerImplementation("eui.IAssetAdapter", assetAdapter);
         egret.registerImplementation("eui.IThemeAdapter", new ThemeAdapter());
@@ -27,17 +12,12 @@ class Main extends eui.UILayer {
     }
 
     private async runGame() {
-        Socket.instance.getMessage("0");
+        Socket.instance.getMessage("1");
         mouse.enable(this.stage);
         SecneManager.instance.rootLayer = this;
         await this.loadResource()
         this.createGameScene();
         const result = await RES.getResAsync("description_json")
-        // this.startAnimation(result);
-        await platform.login();
-        const userInfo = await platform.getUserInfo();
-        console.log(userInfo);
-
     }
 
     private async loadResource() {
@@ -56,8 +36,6 @@ class Main extends eui.UILayer {
 
     private loadTheme() {
         return new Promise((resolve, reject) => {
-            // load skin theme configuration file, you can manually modify the file. And replace the default skin.
-            //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。
             let theme = new eui.Theme("resource/default.thm.json", this.stage);
             theme.addEventListener(eui.UIEvent.COMPLETE, () => {
                 resolve();
@@ -65,11 +43,6 @@ class Main extends eui.UILayer {
         })
     }
 
-    private textfield: egret.TextField;
-    /**
-     * 创建场景界面
-     * Create scene interface
-     */
     protected createGameScene(): void {
         SecneManager.instance.changeScene(new HallScene());
     }
@@ -83,33 +56,5 @@ class Main extends eui.UILayer {
         result.texture = texture;
         return result;
     }
-    /**
-     * 描述文件加载成功，开始播放动画
-     * Description file loading is successful, start to play the animation
-     */
-    private startAnimation(result: Array<any>): void {
-        let parser = new egret.HtmlTextParser();
 
-        let textflowArr = result.map(text => parser.parse(text));
-        let textfield = this.textfield;
-        let count = -1;
-        let change = () => {
-            count++;
-            if (count >= textflowArr.length) {
-                count = 0;
-            }
-            let textFlow = textflowArr[count];
-
-            // 切换描述内容
-            // Switch to described content
-            textfield.textFlow = textFlow;
-            let tw = egret.Tween.get(textfield);
-            tw.to({ "alpha": 1 }, 200);
-            tw.wait(2000);
-            tw.to({ "alpha": 0 }, 200);
-            tw.call(change, this);
-        };
-
-        change();
-    }
 }

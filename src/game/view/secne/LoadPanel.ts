@@ -15,8 +15,6 @@ class LoadPanel extends Scene implements eui.UIComponent {
     protected childrenCreated(): void {
         super.childrenCreated();
         this.load.play();
-        // this.load.addEventListener("complete",,this);
-        // this.load.addEventListener("itemComplete")
     }
 
     protected onComplete() {

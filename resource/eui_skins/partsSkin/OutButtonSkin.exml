@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OutButtonSkin"
+	states="up,down,disabled" width="50"
+	height="50" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="out_png" x="0" y="0" width="50" height="50" anchorOffsetX.down="0" width.down="41.872" anchorOffsetY.down="0" height.down="40.887" y.down="4.433" x.down="4.187"/>
+</e:Skin>
